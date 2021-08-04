@@ -1,0 +1,14 @@
+*{
+    font-weight: bold;   
+     }
+     
+label{
+ font-size: 1rem; 
+ font: weight 5rem; 
+ color:red ;
+ }
+
+ input, button{
+box-shadow:2px 2px 2px  rgb(191, 189, 189)    
+ }
+ 

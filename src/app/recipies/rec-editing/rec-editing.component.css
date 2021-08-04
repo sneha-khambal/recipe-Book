@@ -1,0 +1,22 @@
+
+
+label{
+    font-size: 1rem; 
+   font-weight: bold;
+    color:red ;
+    }
+   
+    input, button,textarea{
+        font-weight: bold;
+   box-shadow:2px 2px 2px  rgb(191, 189, 189)    
+    }
+    
+  .main{
+      margin: 2% 5% 0 60%;
+  }
+  
+  @media(max-width:500px){
+      .main{
+        margin: 2% 30% 0 30%;
+      }
+  }

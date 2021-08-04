@@ -1,0 +1,28 @@
+<div class="row  " id="id" style="margin-top:1% ;"  > 
+    <div class="col-sm-12 flex">
+        <div class="btn btn-success" (click)="newRecipie()"  
+         style="font-weight: bold;  box-shadow:2px 2px 2px  rgb(191, 159, 159); margin-left:9px; ">New Recipie</div>
+         <h3  style="cursor:none;" > Please Select A Recipe...</h3>
+         
+         
+    </div>
+</div>
+
+<hr class="mx-3" style="width:100%; margin-left:5px;">
+<div class="row" id="rec" style="cursor:pointer;height:50px;   margin-left:2%;position: relative;margin-bottom: 10%;border-radius: 10px;" >
+    <div class="col-sm-12"  id="recipe" style="cursor:pointer;margin-left:2%;height:50px;
+    border-bottom: black;  " >
+        <app-recipies-item 
+        *ngFor="let recipeEl of recipies; let i =index" 
+        [recipe]="recipeEl"
+        [index]="i"
+        ></app-recipies-item>
+        
+    </div>
+    
+    </div>
+
+ 
+ 
+ 
+

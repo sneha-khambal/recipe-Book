@@ -1,0 +1,22 @@
+ 
+   <nav class="navbar navbar-expand-lg ">
+     
+   <div class="brandTitle" style="cursor:none;">Recipe Book</div>
+   
+  
+   <div class="navbar-link active">
+     <ul>
+       <li><a routerLink="/auth" *ngIf="!isAuthenticated">Authenticate</a></li>
+       <li><a routerLink="/shoppingList"   *ngIf="!isAuthenticated" >ShoppingList</a></li>
+       <li><a  routerLink="/recipes"   *ngIf="isAuthenticated" >Recipes</a></li>
+       <li><a   (click)="logOut()"   *ngIf="isAuthenticated" style="cursor: pointer;;" >LogOut</a></li>
+       
+        <span   class="btn btn-success span" (click)="fetchData()" *ngIf="isAuthenticated" >  Get Recipies  </span>
+        <span  class="btn btn-success span" (click)="saveData()" *ngIf="isAuthenticated"> save Recipies  </span>
+   
+     </ul>
+   </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+ 

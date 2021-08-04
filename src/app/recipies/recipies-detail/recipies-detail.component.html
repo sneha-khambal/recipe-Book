@@ -1,0 +1,38 @@
+ 
+       
+   <div class="one" style="font-weight: bold ; ;" >
+    <div   >
+        <h4 style="font-weight: bold; "> {{recpee.name}}</h4>
+    </div>
+</div>
+            <ul class=" btn-group dropdown onDropDown"  >
+                
+             <li class=" btn btn-success dropdown-toggle "role="button">
+                 
+                  <h3> Manage <span class="caret"></span> Recipe </h3> 
+                <ul class="menu "  >
+                <li ><a  (click)="onAddToShoppingList()" style="cursor: pointer;font-weight: bold;text-align: center;" > Add To Shooping List </a></li>
+                <li ><a   (click)="editing()" style="cursor: pointer;font-weight: bold;text-align: center;"  >Edit Recipie</a></li>
+                <li ><a    (click)="onDelete()" style="cursor: pointer;font-weight: bold;text-align: center;" >Delete Recipie</a></li>
+            </ul>
+        </li>
+        </ul>
+ 
+ <div class=" three"    >
+    <div   style="font-weight: bold; overflow :hidden; font-size: 12px;">
+        {{recpee.description}}
+    </div>
+</div>
+<div class=" four" style="font-weight: bold; " >
+    <div   >
+       <ul  *ngIf="recpee.Ingreadient">
+           <li    
+             *ngFor="let ingredients of  recpee.Ingreadient"   >
+              {{ingredients.name}} -{{ingredients.amount}}
+           </li>
+       </ul>
+    </div>
+</div>
+
+
+ 

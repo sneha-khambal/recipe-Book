@@ -1,0 +1,14 @@
+ <div class="row" style="margin-right: 25%; margin-left: 10%;">
+     <div class="col-md-12">
+         <app-shopping-edit></app-shopping-edit>
+         <hr>
+  <ul class="list-group" >
+      <a class="list-group-item" style="cursor: pointer ; font-weight: bold; text-decoration: none;color: black;"
+      *ngFor="let ing of Ingreadient; let i= index"
+      (click)="onEditItem(i)">
+      {{ing.name}} - ({{ing.amount}}) 
+    
+    </a>
+  </ul>
+</div>
+ </div>

@@ -1,0 +1,39 @@
+ 
+label{
+    font-size: 1rem; 
+    font: weight 5rem; 
+    color:red ;
+    padding-top: 40px;
+    }
+   
+    input, button{
+   box-shadow:2px 2px 2px  rgb(191, 189, 189)    
+    }
+    
+
+    .mainDiv{
+         margin-top: 10%;
+         display: flex;
+         justify-content: center;
+    }
+     
+  .btn{
+       margin-left: 25%;
+  }
+  .mainDiv{margin-top: 5px;}
+
+    @media(max-width:763px){
+         .mainDiv{
+              margin-left:10%;
+              margin-right:10%;
+         }
+          .secDiv{
+               margin-left:10%;
+               margin-right:10%;
+     }
+      
+     .btn{
+          margin-left: 5%;
+     }
+
+    }
